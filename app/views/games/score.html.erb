@@ -1,0 +1,9 @@
+<h1>Your Score</h1>
+<p> Your grid: <%= params[:letters]%>
+
+<div>
+<p> Your word: <%= params[:word]%></p>
+<p>Your score: <%= @result[:score]%></p>
+<p id="message"><%= @result[:message]%></p>
+<p><%= link_to "New Game", new_path %></p>
+</div>
